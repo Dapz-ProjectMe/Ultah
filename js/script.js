@@ -39,7 +39,7 @@ const revealObserver = new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){
       entry.target.animate(
-        [{opacity:.15,transform:"translateY(22px)"},{opacity:1,transform:"translateY(0)"}],
+        [{opacity:.16,transform:"translateY(22px)"},{opacity:1,transform:"translateY(0)"}],
         {duration:700,easing:"cubic-bezier(.2,.7,.2,1)",fill:"forwards"}
       );
       revealObserver.unobserve(entry.target);
